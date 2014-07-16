@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FirstViewController.h
 //  Xianf
 //
 //  Created by james on 13/07/14.
@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
 
-@interface ViewController : RESideMenu <RESideMenuDelegate>
+
+@interface FirstViewController : UIViewController
 
 @end
