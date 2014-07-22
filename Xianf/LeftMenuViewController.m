@@ -36,11 +36,22 @@
         tableView.opaque = NO;
         tableView.backgroundColor = [UIColor clearColor];
         tableView.backgroundView = nil;
+    
+        
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         tableView.bounces = NO;
         tableView.scrollsToTop = NO;
         tableView;
     });
+    
+   // UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Stars"]];
+    //[tempImageView setFrame:tableView.frame];
+        //tableView.backgroundView = tempImageView;
+    UIImage *backgroundImage = [UIImage imageNamed:@"Stars"];
+    UIImageView *backgroundImageView=[[UIImageView alloc]initWithFrame:self.view.frame];
+    backgroundImageView.image=backgroundImage;
+    [self.view insertSubview:backgroundImageView atIndex:0];
+
     [self.view addSubview:self.tableView];
 }
 
